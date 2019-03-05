@@ -50,6 +50,8 @@ public class Qrcode extends AppCompatActivity {
         if (result != null) {
             if (result.getContents() != null) {
                 alert(result.getContents());
+                Intent intent = new Intent(Qrcode.this, CadastroVeiculo.class);
+                startActivity(intent);
             } else {
                 alert("Leitura cancelada");
             }
