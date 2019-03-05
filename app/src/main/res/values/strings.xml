@@ -1,12 +1,3 @@
 <resources>
     <string name="app_name">Velcar Cadastro de Veículo</string>
-
-    <string-array name="Marca">
-        <item>Marca</item>
-        <item>Fiat</item>
-        <item>Citroen</item>
-        <item>Ford</item>
-        <item>Subaru</item>
-        <item>Volkswagen</item>
-    </string-array>
 </resources>

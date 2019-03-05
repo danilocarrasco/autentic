@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.autentic.R;
 
 public class CadastroVeiculo extends AppCompatActivity {
 
-    Spinner Marca;
+    private Spinner Marca;
+    String[] marcas = {"Fiat", "Chevrolet", "Citroen", "Subaru", "Volkswagen"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +22,9 @@ public class CadastroVeiculo extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Marca = (Spinner) findViewById(R.id.spinnerMarca);
-
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.Marca, android.R.layout.simple_spinner_item);
+        Marca = findViewById(R.id.spMarca);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, marcas);
         Marca.setAdapter(adapter);
+
     }
 }
