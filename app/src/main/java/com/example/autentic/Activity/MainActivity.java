@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtEmailLogin;
     private EditText edtSenhaLogin;
     private Button   btnLogin;
-    private Button   btnCancelar;
+    private Button   btnNovo;
+
     private Usuario usuario;
 
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         edtEmailLogin = (EditText) findViewById(R.id.edtemail);
         edtSenhaLogin = (EditText) findViewById(R.id.edtsenha);
         btnLogin      = (Button)   findViewById(R.id.btncadastro);
-        btnCancelar   = (Button)   findViewById(R.id.btncancelar);
+        btnNovo   = (Button)   findViewById(R.id.btnnovo);
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(MainActivity.this, "Preencha os campos de E-mail e Senha!", Toast.LENGTH_SHORT).show();
                 }
+
+            }
+        });
+
+        btnNovo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirTelaCadastro();
             }
         });
 
@@ -74,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(task.isSuccessful()){
 
-                    abrirTelaAdministrador();
+                    abrirTelaQRCode();
 
                     Toast.makeText(MainActivity.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
                     edtEmailLogin.setText("");
@@ -91,12 +100,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private  void abrirTelaAdministrador(){
+    private  void abrirTelaQRCode(){
 
-        Intent intent = new Intent(MainActivity.this, Cadastro.class);
+        Intent intent = new Intent(MainActivity.this, Qrcode.class);
         startActivity(intent);
 
-
     }
+
+    private  void abrirTelaCadastro(){
+
+        Intent intent = new Intent(MainActivity.this, Cadastro.class);
+        startActivity(intent);}
 
 }

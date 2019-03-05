@@ -14,7 +14,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="#DD0000">
@@ -39,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="E-mail"
-
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -47,6 +47,8 @@
         android:layout_width="match_parent"
         android:hint="Senha"
         android:layout_height="60dp"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
         android:inputType="textPassword" />
 
     <EditText
@@ -54,6 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Repita a senha"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
         android:inputType="textPassword" />
 
     <EditText
@@ -61,41 +65,11 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Nome"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
         android:inputType="text" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:orientation="vertical">
-    </LinearLayout>
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:outlineSpotShadowColor="#c0c0c0">
-
-        <RadioButton
-            android:id="@+id/radioAdm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Administrador"
-            android:textColor="#c0c0c0"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:orientation="vertical">
-        </LinearLayout>
-
-        <RadioButton
-            android:id="@+id/radioAtendente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Atendente"
-            android:textColor="#c0c0c0"/>
-    </RadioGroup>
-
-    <LinearLayout
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="vertical">
@@ -123,7 +97,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="50dp"
         android:orientation="vertical">
     </LinearLayout>
 
@@ -133,7 +107,6 @@
         android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
         android:textColor="#C0C0C0"
         android:textAlignment="center"
-        android:textSize="12sp"
-        />
+        android:textSize="12sp" />
 
 </LinearLayout>

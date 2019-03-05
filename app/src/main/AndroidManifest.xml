@@ -5,15 +5,15 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icone"
-        android:label="@string/app_name"
+        android:label="Velcar Operador"
         android:roundIcon="@mipmap/icone_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainActivity"></activity>
-        <activity android:name=".Activity.Cadastro"></activity>
+        <activity android:name=".Activity.Qrcode"></activity>
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.Cadastro" />
         <activity android:name=".Activity.SplashScreen">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
