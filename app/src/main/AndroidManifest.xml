@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/icone_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.CadastroVeiculo"></activity>
+        <activity android:name=".Activity.PecasDefeito"></activity>
+        <activity android:name=".Activity.CadastroVeiculo" />
         <activity android:name=".Activity.Qrcode" />
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.Cadastro" />
