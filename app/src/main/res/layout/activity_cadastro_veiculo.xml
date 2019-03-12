@@ -84,8 +84,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp">
+        android:layout_height="50dp">
 
         <TextView
             android:layout_width="68dp"
@@ -94,21 +93,22 @@
             android:layout_gravity="center"
             android:text="Placa:"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
         <EditText
-            android:layout_width="60dp"
+            android:layout_width="56dp"
             android:layout_height="40dp"
-            android:background="#c0c0c0"
             android:layout_gravity="center"
+            android:background="#c0c0c0"
             android:inputType="text"
             android:maxLength="3"
             android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="30sp"
             tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:textColor="#000000"/>
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -124,18 +124,32 @@
 
         <EditText
             android:id="@+id/textView3"
-            android:layout_width="85dp"
+            android:layout_width="75dp"
             android:layout_height="40dp"
-            android:background="#c0c0c0"
             android:layout_gravity="center"
+            android:background="#c0c0c0"
             android:inputType="number"
             android:maxLength="4"
+            android:textColor="#000000"
+            android:textSize="30sp"
             tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:textColor="#000000"/>
+            tools:layout_editor_absoluteY="0dp" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+    </LinearLayout>
 
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#c0c0c0"
+        android:textSize="18sp"
+        android:text="REGISTRAR VEÍCULO" />
 
 </LinearLayout>

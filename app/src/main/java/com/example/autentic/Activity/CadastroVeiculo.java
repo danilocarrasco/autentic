@@ -1,11 +1,14 @@
 package com.example.autentic.Activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -26,6 +29,8 @@ public class CadastroVeiculo extends AppCompatActivity {
     String[] modelos = {"Siena", "C4", "Uno", "Hilux", "Up"};
     String[] cores = {"Preto", "Branco", "Prata", "Azul", "Amarelo"};
     String[] pinturas = {"Sólida", "Metálica", "Perolizada"};
+
+    private Button btnRegistrar;
 
 
     @Override
@@ -59,5 +64,15 @@ public class CadastroVeiculo extends AppCompatActivity {
         Pintura.setAdapter(adapterPintura);
         Pintura.getBackground().setColorFilter(parseColor("#c0c0c0"), PorterDuff.Mode.SRC_ATOP);
         adapterPintura.setDropDownViewResource(R.layout.spinner_dropdown_colors);
+
+        btnRegistrar = findViewById(R.id.btnregistrar);
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CadastroVeiculo.this, PecasDefeito.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
